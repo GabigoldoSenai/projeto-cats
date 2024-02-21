@@ -1,0 +1,64 @@
+:root{
+    --orange-low: #EB6440;
+    --white-high: #fff;
+    --white-low: #D9D9D9;
+    --black: #000;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-color: var(--white-low);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+}
+
+.navbar, .footer{
+    background-color: var(--orange-low);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 calc(50px + 5%) ;
+}
+
+.footer{
+    justify-content: center;
+}
+
+.logo{
+    height: 80px;
+    transform: rotate(180deg);
+}
+
+.navbar> ul{
+    display: flex;
+    list-style-type: none; 
+}
+
+.nav-links{
+    color: var(--black);
+    text-decoration: none;
+    margin-right: calc(20px + 20%);
+}
+
+.img-grid{
+    max-width: 1200px;
+    align-self: center;
+    display:grid;
+    grid-template-columns: auto auto; 
+    
+}
+.catImg{
+    height: 640px;
+    border: 2px solid var(--white-high);
+}
